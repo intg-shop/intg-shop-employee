@@ -1,0 +1,11 @@
+{
+  "name": "Intg Shop Employee",
+  "short_name": "Shop Desk",
+  "description": "See arrivals and update booking status.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3eee3",
+  "theme_color": "#183d37",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
