@@ -8,23 +8,8 @@
     <link rel="icon" href="./icon.svg" type="image/svg+xml" />
     <link rel="manifest" href="./manifest.webmanifest" />
     <title>Intg Shop · Employee</title>
-    <script type="module" crossorigin src="./assets/index-Dtvj-dzS.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DPz0imZi.css">
+    <script type="module" crossorigin src="./assets/index-Dq-yBeX2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DpVkVX6R.css">
   </head>
-  <body><div id="root"></div><script>
-    let fallbackAnalyticsSession="";
-    function analyticsSession(){const now=Date.now(),key="intg_shop_click_session";try{let id=sessionStorage.getItem(key);if(!id){id=crypto.randomUUID?crypto.randomUUID():now.toString(36)+"-"+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2);sessionStorage.setItem(key,id)}return id}catch(_){return fallbackAnalyticsSession||(fallbackAnalyticsSession=now.toString(36)+"-"+Math.random().toString(36).slice(2)+Math.random().toString(36).slice(2))}}
-    document.addEventListener("click",function(event){
-      const target=event.target.closest("button,a,[role=button]");if(!target)return;
-      const area=target.closest("[data-analytics-section],section,header,nav,footer,form,main");
-      const label=(target.dataset.analyticsLabel||target.getAttribute("aria-label")||target.innerText||target.textContent||"").replace(/\s+/g," ").trim().slice(0,160);if(!label)return;
-      const section=((area&&area.dataset.analyticsSection)||(area&&area.id)||(area&&Array.from(area.classList).slice(0,2).join("."))||(area&&area.tagName.toLowerCase())||"page").slice(0,100);
-      const hostname=location.hostname.toLowerCase(),title=document.title.toLowerCase();
-      const surface=hostname.startsWith("admin.")||title.includes("shop admin")?"admin":hostname.startsWith("employee.")||title.includes("employee")?"employee":"public";
-      const page=location.pathname+(location.hash?location.hash.split("?")[0]:"");
-      const body=JSON.stringify({session_id:analyticsSession(),surface,hostname,page,section,element:target.tagName==="A"?"link":"button",label,x_percent:Math.max(0,Math.min(100,Math.round(event.clientX/innerWidth*100))),y_percent:Math.max(0,Math.min(100,Math.round(event.clientY/innerHeight*100)))});
-      const endpoint=hostname==="localhost"||hostname==="127.0.0.1"?"http://localhost:8080/api/analytics/clicks":"https://intg.shop/api/analytics/clicks";
-      fetch(endpoint,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body,keepalive:true}).catch(()=>{});
-    });
-  </script></body>
+  <body><div id="root"></div></body>
 </html>
